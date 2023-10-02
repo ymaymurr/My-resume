@@ -1,0 +1,95 @@
+/* Загальні стилі */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Стилі для головного контенту */
+.main-content {
+    flex: 2;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.my-info {
+    margin: 0;
+    padding: 0;
+}
+
+.my-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.my-profession {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.work-experience-duties-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.work-experience-duties-item {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Стилі для бокової панелі */
+.sidebar {
+    flex: 1;
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+
+/* Стилі для контактів */
+.contacts-conteiner {
+    margin-top: 20px;
+}
+
+.contacts-item {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contacts-type {
+    font-weight: 700;
+}
+
+.contacts-link {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Медіа-запити для адаптивного дизайну */
+@media (max-width: 768px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .sidebar {
+        margin-top: 20px;
+    }
+}
